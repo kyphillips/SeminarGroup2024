@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Save Web Form Data to Spreadsheets</title>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/oVMs24DDA6KykfDC/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+					document.getElementById("myForm").reset();
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<form id="myForm">
+		<label>Which Camp will you be attending?</label>
+		<br/>
+		<select name="camp" id="camp">
+			<option value="athletic">Athletic</option>
+			<option value="music">Music</option>
+			<option value="engineering">Engineering</option>
+			<option value="csi">CSI</option>
+			<option value="nursing">Nursing</option>
+		  </select>
+		  <br/>
+		  <br/>
+		  <br/>
+		<label>First Name</label>
+		<input name="first_name" />
+		<br/>
+		<label>Last Name</label>
+		<input name="last_name" />
+		<br/>
+		<label>Age</label>
+		<select name="camp" id="camp">
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+		  </select>
+		<br/>
+		<br/>
+		<br/>
+		<label>Contact Email</label>
+		<input type="email" name="contact_email" />
+		<br/>
+		<label>Emergency Contact First Name</label>
+		<input name="emergency_contact_first_name" />
+		<br/>
+		<label>Emergency Contact Last Name</label>
+		<input name="emergency_contact_last_name" />
+		<br/>
+		<label>Emergency Contact Phone</label>
+		<input name="emergency_contact_phone" />
+		<br/>
+		<br/>
+		<br/>
+		<label>Special Accommodations (ie Allergies, Disabilities, etc)</label>
+		<br>
+		<textarea name="special_accommodations"></textarea>
+		</textarea>
+	</form>
+	<button onclick='SubForm()'>Submit</button>
+</body>
+</html>
