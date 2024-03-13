@@ -1,3 +1,4 @@
+/* TARGETTING ALL THE CONTENT ON THE PAGE */
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -5,6 +6,7 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+/* DEFAULT COLOR FOR BODY */
 body {
 	background-color: #fff;
 }
@@ -15,7 +17,6 @@ html {
 }
 
 /* NAV BAR */
-
 .nav {
 	display: flex;
 	justify-content: space-around;
@@ -24,11 +25,16 @@ html {
 	padding-left: 150px;
 }
 
-.camp-name {
-	font-size: 1rem;
+.logo {
+	text-decoration: none;
+	color: #000000;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.camp-name {
+	font-size: 1rem;
 	line-height: 2.5rem;
 	margin-right: 0;
 }
@@ -62,9 +68,8 @@ html {
 .nav-links li a {
 	text-decoration: none;
 	color: black;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	font-weight: 400;
-	color: black;
 }
 
 .nav-links li a:hover {
@@ -72,8 +77,133 @@ html {
 	text-underline-offset: 1.2rem;
 }
 
-/* INTRO DIV  */
+/* HAMBURGER MENU */
 
+#hamburger-nav {
+	/* display: none; */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgba(255, 204, 0, 1);
+
+	padding-top: 1.5rem;
+	z-index: 1000;
+
+	display: none;
+}
+
+.hamburger-camp-name {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	margin-right: 0;
+}
+
+.ham-logo {
+	color: black;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.ham-logo h2 {
+	font-size: 2.6rem;
+	font-weight: 800;
+	margin-bottom: 0;
+	text-transform: none;
+}
+
+.ham-logo h3 {
+	font-weight: 600;
+	margin-top: 0;
+	font-size: 1rem;
+}
+
+.hamburger-menu {
+	position: relative;
+	display: inline-block;
+	background-color: #000000;
+	width: 100%;
+	padding-bottom: 2rem;
+	z-index: 1000;
+
+	/* background-color: black; */
+}
+
+.hamburger-icon {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0 auto;
+	height: 24px;
+	width: 30px;
+
+	margin-top: 1.2rem;
+	cursor: pointer;
+}
+
+.hamburger-icon span {
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+	position: absolute;
+	top: 100%;
+	right: 35%;
+	background-color: black;
+	width: fit-content;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	padding: 0 0.6rem;
+}
+
+.menu-links a {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #ffffff;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+	list-style: none;
+}
+
+.menu-links.open {
+	max-height: 400px;
+	padding: 1rem 1rem;
+}
+
+.hamburger-icon.open span:first-child {
+	transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+	opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+	transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+	transform: none;
+}
+.hamburger-icon span:nth-child(2) {
+	opacity: 1;
+}
+.hamburger-icon span:last-child {
+	transform: none;
+}
+
+/* INTRO DIV  */
 .kids-playing {
 	width: 100%;
 	aspect-ratio: 16/9;
@@ -105,6 +235,7 @@ html {
 	padding: 23px 45px;
 	white-space: nowrap;
 	color: black;
+	transition: all 0.3s;
 
 	text-decoration: underline;
 	text-underline-offset: 0.8rem;
@@ -118,11 +249,9 @@ html {
 	cursor: pointer;
 	background-color: black;
 	color: #fff;
-	transition: all 0.3s;
 }
 
 /* ABOUT SECTION */
-
 .about-section {
 	display: flex;
 	flex-direction: column;
@@ -159,7 +288,6 @@ html {
 }
 
 /*CAMP ACTIVITIES */
-
 .activities {
 	padding-top: 1rem;
 	background-color: #222222;
@@ -175,6 +303,7 @@ html {
 	padding-left: 3.5rem;
 	overflow: hidden;
 	padding-top: 2rem;
+	margin-bottom: 5rem;
 }
 
 div.about-activity,
@@ -225,4 +354,161 @@ div.about-activity-2 {
 	object-fit: cover;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
+	transition: filter 0.3s smooth;
+}
+
+.about-activity img:hover,
+.about-activity-2 img:hover {
+	filter: brightness(120%);
+}
+
+.calender-activity {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.calender-activity a {
+	cursor: default;
+}
+
+.calender-activity-links {
+	margin-right: 0.5rem;
+	padding: 15px 23px;
+	font-size: 22px;
+	background-color: #ffcc00;
+	font-weight: 600;
+	border: none;
+	transition: all 0.3s;
+
+	cursor: pointer;
+}
+
+.calender-activity-links:hover {
+	background-color: #000000;
+	color: #fff;
+}
+
+/* FAQS QUESTIONS */
+.faqs-div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 70vh;
+
+	width: 50%;
+	margin: 0 auto;
+
+	margin-bottom: 4rem;
+}
+
+.faqs-title {
+	margin: 1rem 0;
+	font-size: 2rem;
+}
+
+.faq {
+	max-width: 760px;
+	margin-top: 2rem;
+	padding-bottom: 1rem;
+	cursor: pointer;
+	border-bottom: 2px solid #000000;
+}
+
+.question {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
+
+.question h3 {
+	font-size: 1.1rem;
+}
+
+.answer {
+	padding-bottom: 5px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1.2s ease;
+}
+
+.answer p {
+	padding-top: 1rem;
+	line-height: 1.2rem;
+	font-size: 1.2rem;
+}
+
+.faq.active .answer {
+	max-height: 300px;
+	animation: fade 1s ease-in-out;
+}
+
+.faq.active svg {
+	transform: rotate(180deg);
+}
+
+svg {
+	transition: transform 0.5s ease-in;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* FOOTER */
+footer {
+	height: 22vh;
+	background-color: #000000;
+	padding-top: 2rem;
+}
+
+.foot-main-div {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.name-address {
+	margin-right: 15rem;
+}
+
+.school-name {
+	color: #ffcc00;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+.address {
+	color: #ffffff;
+	margin-top: 0.8rem;
+	font-size: 1.1rem;
+	line-height: 1.4rem;
+}
+
+.social-links {
+	margin-top: 1rem;
+}
+
+.social-links svg {
+	margin-right: 0.5rem;
+}
+
+.important-camp-info {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.important-camp-info a {
+	margin-bottom: 0.7rem;
+	color: #ffffff;
+	font-size: 1.1rem;
 }
