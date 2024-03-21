@@ -1,0 +1,401 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif !important;
+}
+html {
+  scroll-behavior: smooth;
+}
+/*NAV section*/
+nav {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+.nav-links li a {
+  text-decoration: none;
+  padding: 25px;
+}
+/*Activities*/
+.activities h1 {
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+.activities_p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.activities p {
+  line-height: 30px;
+  width: 50%;
+  position: relative;
+  top: 7rem;
+}
+/*Music section*/
+.music {
+  width: 100%;
+  height: 100vh;
+  padding: 4.38rem 0;
+}
+.music .music_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 6rem;
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 10);
+}
+
+.music .music_main .image img {
+  width: 38rem;
+  margin-left: 5rem;
+  position: relative;
+  top: 3rem;
+}
+
+.music .music_main .music_text h1 {
+  color: #fac031;
+  margin-right: 1rem;
+  font-size: 2rem;
+  position: relative;
+  top: 5rem;
+  margin-left: 2.5rem;
+}
+
+.music .music_main .music_text .music_info {
+  margin-left: 3rem;
+  margin-top: 6rem;
+  line-height: 2.5rem;
+}
+.music .music_main .music_text .music_info h4 {
+  font-weight: 1000px;
+  font-size: 20px;
+  color: #fac031;
+}
+/*Crime investigation section*/
+.crime_investigation {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 0;
+}
+
+.crime_investigation .crime_main {
+  margin-top: 10%;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+.crime_investigation .crime_main .image {
+  float: right;
+  width: 50%;
+}
+
+.crime_investigation .crime_main .image img {
+  width: 80%;
+  height: auto;
+  display: block;
+  padding-top: 2rem;
+}
+
+.crime_investigation .crime_main .crime_text {
+  float: left;
+  width: 50%;
+  padding-left: 5rem;
+  line-height: 2.5rem;
+}
+.crime_investigation .crime_main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.crime_investigation .crime_main .crime_text h1 {
+  color: #fac031;
+  margin-right: 15px;
+  font-size: 35px;
+}
+
+.crime_investigation .crime_main .crime_text p span {
+  font-size: 20px;
+}
+
+.crime_investigation .crime_main .crime_text h4 {
+  font-weight: 1000px;
+  font-size: 20px;
+  color: #fac031;
+}
+/*FilmMaking Workshop*/
+
+.filmmakers_workshop {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 0;
+}
+
+.filmmakers_workshop .filmmakers_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+
+.filmmakers_workshop .filmmakers_main .image img {
+  width: 38rem;
+  margin-left: 5rem;
+  position: relative;
+  top: 3rem;
+}
+
+.filmmakers_workshop .filmmakers_main .film_text {
+  margin-left: 3rem;
+  margin-top: 6rem;
+  width: 100%;
+  line-height: 3rem;
+}
+
+.filmmakers_workshop .filmmakers_main .film_text h1 {
+  color: #fac031;
+  margin-right: 1rem;
+  font-size: 2rem;
+  position: relative;
+  bottom: 3rem;
+  margin-left: 2rem;
+}
+
+.filmmakers_workshop .filmmakers_main .film_text h4 {
+  font-weight: 1000px;
+  font-size: 20px;
+  color: #fac031;
+}
+
+/*Engineering*/
+.engineering {
+  width: 100%;
+  height: 100vh;
+  padding: 4.38rem 0;
+}
+
+.engineering .engineering_main {
+  margin-top: 2rem;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+
+.engineering .engineering_main .image img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-top: 2rem;
+}
+
+.engineering .engineering_main .image {
+  float: right;
+  width: 50%;
+}
+
+.engineering .engineering_main .engineering_text {
+  float: left;
+  width: 50%;
+  padding-left: 5rem;
+  line-height: 2.5rem;
+}
+
+.engineering .engineering_main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.engineering .engineering_main .engineering_text h1 {
+  color: #fac031;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.engineering .engineering_main .engineering_text .engineering_p {
+  margin-top: 2rem;
+  padding-right: 3rem;
+}
+
+.engineering .engineering_main .engineering_text h4 {
+  font-weight: 1000px;
+  font-size: 20px;
+  color: #fac031;
+}
+
+/*Nursing Camp*/
+
+.nursing {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 0;
+}
+
+.nursing .nursing_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+
+.nursing .nursing_main .image img {
+  width: 38rem;
+  margin-left: 5rem;
+  position: relative;
+  top: 4rem;
+}
+
+.nursing .nursing_main .nursing_text {
+  margin-left: 3rem;
+  margin-top: 6rem;
+  width: 50%;
+  line-height: 2.5rem;
+}
+
+.nursing .nursing_main .nursing_text h1 {
+  color: #fac031;
+  margin-right: 1rem;
+  font-size: 2rem;
+  position: relative;
+  bottom: 3rem;
+  margin-left: 2rem;
+}
+
+.nursing .nursing_main .nursing_text h4 {
+  font-weight: 1000px;
+  font-size: 20px;
+  color: #fac031;
+}
+
+/*Athletic*/
+
+.athletic {
+  width: 100%;
+  height: 100vh;
+  padding: 4.38rem 0;
+}
+
+.athletic .athletic_main {
+  margin-top: 2rem;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+
+.athletic .athletic_main .image img {
+  width: 80%;
+  height: auto;
+  display: block;
+}
+
+.athletic .athletic_main .image {
+  float: right;
+  width: 50%;
+}
+
+.athletic .athletic_main .athletic_text {
+  float: left;
+  width: 50%;
+  padding-left: 5rem;
+  line-height: 2.5rem;
+}
+
+.athletic .athletic_main .athletic_text::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.athletic .athletic_main .athletic_text h1 {
+  color: #fac031;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.athletic .athletic_main .athletic_text .athletic_p {
+  margin-top: 2rem;
+  padding-right: 3rem;
+}
+.athletic .athletic_main .athletic_text h4 {
+  font-weight: 1000px;
+  font-size: 20px;
+  color: #fac031;
+}
+
+/* For mobile phone*/
+
+@media only screen and (max-width: 768px) {
+  /* music camp */
+
+  .music .music_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: auto;
+    z-index: 1000;
+  }
+
+  .music .music_text h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .music .music_main .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .music .music_main .music_text .music_info {
+    box-sizing: border-box;
+    text-align: justify;
+  }
+  .music .music_main .music_text .music_info h4 {
+    font-weight: 1000px;
+    font-size: 20px;
+    color: #fac031;
+  }
+
+  /*Crime Investigation*/
+  .crime_investigation .crime_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 100px;
+    z-index: 2000;
+  }
+
+  .crime_investigation .crime_main .image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .crime_investigation .crime_main .crime_text {
+    box-sizing: border-box;
+    text-align: justify;
+  }
+}
