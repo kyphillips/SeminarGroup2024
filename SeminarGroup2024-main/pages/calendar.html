@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>WSC Summer Camp 2024</title>
+  <link rel="stylesheet" href="calendar.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header>
+    <div class="title">
+      <h1>WSC SUMMER CAMP CALENDAR 2024</h1>
+      <br/>
+      <nav>
+        <a href="directory.html">Camp Directory | </a>
+        <a href="registration.html">Registration |</a>
+        <a href="calendar.html">Calendar Page |</a>
+        <a href="activities.html">Camp Activities </a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="wrapper">
+    <div class="calendar">
+      <div class="current-date"></div>
+      <div class="button-container">
+        <span id="prev">prev</span>
+        <span id="next">next</span>
+      </div>
+      <ul class="weeks">
+        <li>Sun</li>
+        <li>Mon</li>
+        <li>Tue</li>
+        <li>Wed</li>
+        <li>Thu</li>
+        <li>Fri</li>
+        <li>Sat</li>
+      </ul>
+      <ul class="days">
+        <!-- Days will be dynamically generated here -->
+      </ul>
+      
+    </div>
+  </div>
+  <div class="column-container">
+    <div class="column">
+      <!-- Content for the third column -->
+      <p>Want to Stay Up to Date with Our Summer Plans?<br> 
+      ----------------<br>
+      Give us your name and email here!</p><br>
+      <p>Link to registration page here</p>
+    </div>
+    <div class="column">
+      <!-- Content for the third column -->
+      <p>Column 2 Content<br> 
+      ----------------<br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing 
+        elit, sed do eiusmod tempor incididunt ut labore et 
+        dolore magna aliqua.</p>
+    </div>
+  </div>
+  <br>
+  <!-- Popup for displaying events -->
+  <div id="event-popup" class="popup">
+    <div class="popup-content">
+      <span id="close-popup" class="close-btn" onclick="closePopup('event-popup')"><b>X</b></span><br><br>
+      <h3><u>Events / Activities</u></h3>
+      <br>
+      <ul id="event-list"></ul>
+    </div>
+  </div>
+  <br>
+
+  <!-- Include your custom script -->
+  <script src="calendar.js" defer></script>
+</body>
+<br>
+<footer>
+  <p>&copy; 2023 WSC Summer Camp. All rights reserved.</p>
+</footer>
+</html>

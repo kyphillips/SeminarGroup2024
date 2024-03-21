@@ -1,0 +1,573 @@
+/* MEDIA QUERY WHEN SCREEN WITH IS BETWEEN 1470 AND 1641 */
+@media (min-width: 1470px) and (max-width: 1995px) {
+	/* NAV BAR */
+	.nav {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	/* HAMBURGER MENU */
+	#hamburger-nav {
+		display: none;
+	}
+
+	/* INTRO DIV */
+	.intro-div img {
+		width: 100%;
+	}
+
+	.intro-div .invitation {
+		font-size: 1.9rem;
+		padding: 25px;
+		position: absolute;
+		top: 400px;
+		right: 40px;
+	}
+
+	.intro-register a {
+		top: 100px;
+		right: 90px;
+		font-size: 1.6rem;
+	}
+
+	/* ABOUT PAGE */
+	.about-section {
+		width: 85%;
+		margin: 0 auto;
+		margin-top: 4rem;
+		margin-bottom: 4rem;
+	}
+
+	/*CAMP ACTIVITIES */
+
+	.activity-inner-container {
+		width: 80%;
+		margin: 0 auto;
+		padding-left: 5rem;
+		overflow: hidden;
+		padding-top: 2rem;
+		margin-bottom: 4rem;
+	}
+
+	footer {
+		height: 30vh;
+	}
+}
+
+/* MEDIA QUERY WHEN SCREEN WITH IS BETWEEN 1299 AND 1469 */
+@media (min-width: 1299px) and (max-width: 1469px) {
+	/* HAMBURGER MENU */
+	#hamburger-nav {
+		display: none;
+	}
+
+	/* INTRO SECTION */
+	.intro-div .invitation {
+		font-size: 1.6rem;
+		padding: 25px;
+		top: 400px;
+		right: 40px;
+	}
+
+	.intro-register a {
+		top: 100px;
+		right: 90px;
+		font-size: 1.3rem;
+	}
+
+	/*CAMP ACTIVITIES */
+
+	.activity-inner-container {
+		width: 80%;
+		margin: 0 auto;
+		padding-left: 0;
+		overflow: hidden;
+		padding-top: 1rem;
+		margin-bottom: 4rem;
+	}
+
+	.about-activity,
+	.about-activity-2 {
+		width: fit-content;
+	}
+
+	#p1,
+	#p2,
+	#p3,
+	#p4,
+	#p5,
+	#p6 {
+		font-size: 1.3rem;
+		font-weight: 600;
+		padding: 1rem 0.4rem;
+		color: #000000;
+		width: 340px;
+	}
+
+	.about-activity img,
+	.about-activity-2 img {
+		width: 340px;
+		height: 300px;
+		object-fit: cover;
+	}
+}
+
+/* MEDIA QUERY WHEN SCREEN WITH IS BETWEEN 850 AND 1298 */
+@media (min-width: 850px) and (max-width: 1298px) {
+	/* NAV BAR */
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		padding: 25px 0;
+		padding-left: 60px;
+		padding-right: 25px;
+	}
+
+	.camp-name {
+		font-size: 1rem;
+		line-height: 2rem;
+		margin-right: 2rem;
+	}
+
+	.camp-name h2 {
+		font-size: 2.5rem;
+	}
+
+	.camp-name h3 {
+		font-weight: 600;
+		margin-top: 0;
+	}
+
+	.nav-links {
+		display: flex;
+		align-items: center;
+	}
+
+	.nav li {
+		margin-right: 2rem;
+	}
+
+	.nav-links li a {
+		text-decoration: none;
+		color: black;
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: black;
+		margin-right: 0;
+	}
+
+	/* HAMBURGER MENU */
+	#hamburger-nav {
+		display: none;
+	}
+
+	/* INTRO SECTION */
+	.intro-div .invitation {
+		font-size: 1.3rem;
+		padding: 18px;
+		top: 250px;
+		right: 20px;
+	}
+
+	.intro-register a {
+		top: -80px;
+		right: 20px;
+		font-size: 1.1rem;
+	}
+
+	/* ABOUT PAGE */
+	.about-section {
+		margin-bottom: 3rem;
+	}
+
+	.about-desription {
+		width: 85%;
+	}
+
+	.about-section h2,
+	.activities h2 {
+		font-size: 2rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.about-details {
+		font-size: 1.2rem;
+		color: rgb(34, 34, 34, 0.62);
+		line-height: 2rem;
+		text-align: center;
+		flex-wrap: wrap;
+		padding-bottom: 1.5rem;
+
+		border-bottom: 1px solid black;
+	}
+
+	/* ACTIVITES SECTION */
+	.activity-inner-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		width: 90%;
+		margin: 0 auto;
+		padding-left: 4rem;
+		overflow: hidden;
+		padding-top: 2rem;
+		margin-bottom: 5rem;
+	}
+
+	/* FOOTER SECTION */
+	.name-address {
+		margin-right: 8rem;
+	}
+}
+
+/* MEDIA QUERY WHEN SCREEN WITH IS BETWEEN 850PX AND 959PX */
+@media (min-width: 850px) and (max-width: 959px) {
+	.activity-inner-container {
+		width: 95%;
+	}
+}
+
+/* MEDIA QUERY WHEN SCREEN WITH IS BETWEEN 540PX AND 700PX */
+@media (min-width: 540px) and (max-width: 700px) {
+	/* NAV AND HAMBURGER MENU */
+	#hamburger-nav {
+		display: flex;
+	}
+	.nav {
+		display: none;
+	}
+
+	.ham-logo h3 {
+		font-weight: bold;
+		font-size: 1rem;
+	}
+
+	/* INTRO SECTION */
+
+	.intro-div {
+		z-index: 1;
+	}
+
+	.intro-div .invitation {
+		font-size: 0.9rem;
+		font-weight: 600;
+
+		padding: 10px;
+		top: 200px;
+		right: 20px;
+	}
+
+	.intro-register a {
+		top: -155px;
+		right: 20px;
+		font-size: 0.9rem;
+		padding: 10px;
+		padding-bottom: 15px;
+		font-weight: 600;
+	}
+
+	/* ABOUT SECTION */
+	.about-desription {
+		width: 90%;
+	}
+
+	.about-section h2,
+	.activities h2 {
+		font-size: 2rem;
+		font-weight: 700;
+		margin-bottom: 1rem;
+	}
+
+	.about-details {
+		font-size: 1rem;
+		color: rgb(34, 34, 34, 0.62);
+		line-height: 2rem;
+		text-align: center;
+		flex-wrap: wrap;
+		padding-bottom: 1.5rem;
+
+		border-bottom: 1px solid black;
+	}
+
+	/* ACTIVITES SECTION */
+	.activity-inner-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		overflow: hidden;
+		padding-top: 2rem;
+		margin-bottom: 5rem;
+		margin-left: 3.8rem;
+	}
+
+	.activities h2 {
+		font-size: 1.6rem;
+		font-weight: 700;
+		margin-bottom: 0;
+		margin-bottom: 1rem;
+		margin-top: 0;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	/* FOOTER SECTION */
+	.name-address {
+		margin-right: 3rem;
+	}
+}
+
+/* Screen size between 466px and 5369px */
+@media (min-width: 466px) and (max-width: 539px) {
+	/* NAV AND HAMBURGER MENU */
+	#hamburger-nav {
+		display: flex;
+	}
+	.nav {
+		display: none;
+	}
+
+	/* INTRO */
+	.invitation,
+	.intro-register {
+		display: none;
+	}
+
+	/* ABOUT SECTION */
+
+	.about-section {
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+
+	.about-desription {
+		width: 85%;
+	}
+
+	.about-details {
+		font-size: 1rem;
+		color: rgb(34, 34, 34, 0.62);
+		line-height: 2rem;
+		text-align: center;
+		flex-wrap: wrap;
+		padding-bottom: 1rem;
+
+		border-bottom: 1px solid black;
+	}
+
+	/* ACTIVITIES SECTION */
+	.activities h2 {
+		text-align: center;
+		font-size: 1.6rem;
+		margin: 1rem 2rem;
+	}
+
+	.activity-inner-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 3rem;
+	}
+
+	.about-activity-2 img,
+	.about-activity img {
+		width: 280px;
+		height: 220px;
+
+		object-fit: cover;
+	}
+
+	.about-activity-2 p,
+	.about-activity p {
+		width: 280px;
+	}
+
+	/* FOOTER */
+	footer {
+		height: 60vh;
+	}
+
+	.foot-main-div,
+	.name-address {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.name-address {
+		margin-right: 0;
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+	}
+}
+
+/* WHEN SCREEN wWITH MIN 391PX AND MAX 465PX */
+@media (min-width: 391px) and (max-width: 465px) {
+	/* NAV AND HAMBURGER MENU */
+	#hamburger-nav {
+		display: flex;
+	}
+	.nav {
+		display: none;
+	}
+
+	/* INTRO */
+	.invitation,
+	.intro-register {
+		display: none;
+	}
+
+	/* ABOUT SECTION */
+
+	.about-section {
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+
+	.about-desription {
+		width: 87%;
+	}
+
+	.about-details {
+		font-size: 1rem;
+	}
+
+	/* ACTIVITIES SECTION */
+	.activities h2 {
+		text-align: center;
+		font-size: 1.4rem;
+		margin: 1rem 2rem;
+	}
+
+	.activity-inner-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 3rem;
+	}
+
+	.about-activity-2 img,
+	.about-activity img {
+		width: 220px;
+		height: 220px;
+
+		object-fit: cover;
+	}
+
+	.about-activity-2 p,
+	.about-activity p {
+		width: 220px;
+		font-size: 0.7rem;
+	}
+
+	.calender-activity-links {
+		margin-right: 0.5rem;
+		font-size: 1rem;
+	}
+
+	/* FOOTER */
+	footer {
+		height: 60vh;
+	}
+
+	.foot-main-div,
+	.name-address {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.name-address {
+		margin-right: 0;
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+	}
+}
+
+/* WHEN SCREEN MAX 390PX */
+@media (max-width: 390px) {
+	/* NAV AND HAMBURGER MENU */
+	#hamburger-nav {
+		display: flex;
+	}
+	.nav {
+		display: none;
+	}
+
+	/* INTRO */
+	.invitation,
+	.intro-register {
+		display: none;
+	}
+
+	/* ABOUT SECTION */
+
+	.about-section {
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+
+	.about-desription {
+		width: 87%;
+	}
+
+	.about-details {
+		font-size: 1rem;
+	}
+
+	/* ACTIVITIES SECTION */
+	.activities h2 {
+		text-align: center;
+		font-size: 1.4rem;
+		margin: 1rem 2rem;
+	}
+
+	.activity-inner-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 2rem;
+	}
+
+	.about-activity-2 img,
+	.about-activity img {
+		width: 200px;
+		height: 220px;
+
+		object-fit: cover;
+	}
+
+	.about-activity-2 p,
+	.about-activity p {
+		width: 200px;
+		font-size: 0.3rem;
+	}
+
+	.calender-activity-links {
+		margin-right: 0.5rem;
+		font-size: 1rem;
+	}
+
+	/* FOOTER */
+	footer {
+		height: 60vh;
+	}
+
+	.foot-main-div,
+	.name-address {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.name-address {
+		margin-right: 0;
+		margin-bottom: 2rem;
+		margin-top: 1rem;
+	}
+}
