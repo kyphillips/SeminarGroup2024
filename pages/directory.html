@@ -3,20 +3,65 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="home.css" />
+		<link rel="stylesheet" type="text/css" href="home-media-query.css" />
 
         <title>Directory</title>
-			<nav style = "text-align: center;">
-				<a href="home.html">Home</a>&nbsp;
-				<a href="directory.html">Directory Page</a>&nbsp;
-				<a href="registration.html">Registration</a>&nbsp;
-				<a href="calendar.html">Calendar page</a>&nbsp;
-				<a href="activities.html">Activities page</a>
-			</nav>
-			<style>
-				*{
-					box-sizing: border-box;
-				}
+		<nav class="nav">
+			<div class="camp-name">
+				<a class="logo" href="./home.html">
+					<h2>WAYNE</h2>
+					<h3>SUMMER CAMP</h3>
+				</a>
+			</div>
 
+			<div class="links-div">
+				<ul class="nav-links">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="calendar.html">Calendar</a></li>
+					<li><a href="registration.html">Registration</a></li>
+					<li><a href="directory.html">Directory</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Hamburger Nav -->
+		<nav id="hamburger-nav">
+			<div class="hamburger-camp-name">
+				<a class="ham-logo" href="./home.html">
+					<h2>WAYNE</h2>
+					<h3>SUMMER CAMP</h3>
+				</a>
+			</div>
+			<div class="hamburger-menu">
+				<div class="hamburger-icon" onclick="toggleMenu()">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="menu-links">
+					<ul>
+						<li><a href="./home.html" onclick="toggleMenu()">Home</a></li>
+						<li>
+							<a href="./activities.html" onclick="toggleMenu()">Activities</a>
+						</li>
+						<li>
+							<a href="./calendar.html" onclick="toggleMenu()">Calendar</a>
+						</li>
+						<li>
+							<a href="./registration.html" onclick="toggleMenu()"
+								>Registration</a
+							>
+						</li>
+						<li>
+							<a href="./directory.html" onclick="toggleMenu()">Directory</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+			<style>
 				.row_layout{
 					max-width: auto;
 					display: flex;
@@ -40,24 +85,20 @@
 					}
 				}
 			</style>
-
-		<title>directory</title>
 	</head>
 	<body>
-		<h1>directory</h1>
-		<a href="home.html">Back to main page</a><br />
         <title>directory</title>		
 	</head>
 	<body>
-        <h1 style="text-align:center;">Directory</h1>
-		<h2 style="text-align:center;">Camp Staff</h2>
+        <h1 style="text-align:center;"><br>Directory</h1>
+		<h2 style="text-align:center;"><br>Camp Staff</h2><br>
 
 		<div class="row_layout">
 			<div class="row">
-				<h3 style="text-align:center;">John Doe</h3>
+				<h3 style="text-align:center;">John Doe</h3><br>
 				<center><img src = "https://t3.ftcdn.net/jpg/03/02/88/46/240_F_302884605_actpipOdPOQHDTnFtp4zg4RtlWzhOASp.jpg"
-					alt = "John Doe Profile picture"></center>
-				<center><h4>What I do</h4></center>
+					alt = "John Doe Profile picture"></center><br>
+				<center><h3><u>WHAT I DO</u></h3></center><br>
 				<p style="text-align:center;">Hello all potential campers and parents! My name is John, and I am the Camp Director for all 
 					of the camps, including the sports, music and other camps. I work in tandem with the other 
 					leaders of the camp, making sure everything is in order for the camps to run smoothly so 
@@ -65,16 +106,16 @@
 					itself, to make sure you have all you need while you're here, food and drink and 
 					security to keep you safe, and maintenance to make sure everything in your room and camp experience 
 					is in tip top working order. </p>
-				<center><h4><u>Contact Me</u></h4></center>				
+				<center><h4><u><br>Contact Me</u></h4></center>				
 				<p style="text-align:center;"><b>Phone Number</b><br>(111)111-1111</p>
 				<p style="text-align:center;"><b>Email</b><br>jodoe09@wsc.edu</p>
 			</div>
 
 			<div class="row">
-				<h3 style="text-align:center;">Jane Dohe</h3>
+				<h3 style="text-align:center;">Jane Dohe</h3><br>
 				<center><img src = "https://t4.ftcdn.net/jpg/03/83/25/83/240_F_383258331_D8imaEMl8Q3lf7EKU2Pi78Cn0R7KkW9o.jpg"
-					alt = "Jane Dohe profile Picture"></center>
-				<center><h4>What I do</h4></center>
+					alt = "Jane Dohe profile Picture"></center><br>
+				<center><h3><u>WHAT I DO</u></h3></center><br>
 				<p style="text-align:center;">Hello future campers! My name is Jane, and I am in charge of the Music portion of the camp. What I do
 					is make sure that you get assigned to the proper group for the instrument you play, as well as 
 					coordinate with music teachers and volunteers to make sure you get to where you need to be, as well 
@@ -82,33 +123,33 @@
 					I also make sure that the music instructors are aware of any special accomodations that you may need, 
 					as well as ensuring that each camper is comfortable with the groups and music ensebles that they are 
 					paired with. </p>				
-				<center><h4><u>Contact Me</u></h4></center>
+				<center><h4><u><br>Contact Me</u></h4></center>
 				<p style="text-align:center;"><b>Phone Number</b><br>(222)222-2222</p>
 				<p style="text-align:center;"><b>Email</b><br>jadohe03@wsc.edu</p>
 			</div>
 
 			<div class="row">
-				<h3 style="text-align:center;">Frank Dough</h3>
+				<h3 style="text-align:center;">Frank Dough</h3><br>
 				<center><img src = "https://t4.ftcdn.net/jpg/01/15/85/23/240_F_115852367_E6iIYA8OxHDmRhjw7kOq4uYe4t440f14.jpg"
-					alt = "Frank Dough Profile picture"></center>
-				<center><h4>What I do</h4></center>
+					alt = "Frank Dough Profile picture"></center><br>
+				<center><h3><u>WHAT I DO</u></h3></center><br>
 				<p style="text-align:center;">Howdy campers! My name is Frank and I am in charge of the sports camps here at Wayne. I coordinate with 
 					the coaches of the various sports camps we offer here at Wayne. This is to make sure you get put into the 
 					correct camp of your specific choice, whether it be football, rubgy, or any other sport we offer. I also 
 					make sure that any gear that is required for the sport, that you may not have, can be rented or borrowed from 
 					the school. All of this work is for you to get the best experience of our sports programs while you attend our 
 					summer camps! </p>				
-				<center><h4><u>Contact Me</u></h4></center>				
+				<center><h4><u><br>Contact Me</u></h4></center>				
 				<p style="text-align:center;"><b>Phone Number</b><br>(333)333-3333</p>
 				<p style="text-align:center;"><b>Email</b><br>frdoug04@wsc.edu</p>
 
 			</div>
 
 			<div class="row">
-				<h3 style="text-align:center;">Sarah Doh</h3>
+				<h3 style="text-align:center;">Sarah Doh</h3><br>
 				<center><img src = "https://t3.ftcdn.net/jpg/03/67/46/48/240_F_367464887_f0w1JrL8PddfuH3P2jSPlIGjKU2BI0rn.jpg"
-					alt = "Sarah Doh Profile picture"></center>
-				<center><h4>What I do</h4></center>
+					alt = "Sarah Doh Profile picture"></center><br>
+				<center><h3><u>WHAT I DO</u></h3></center><br>
 				<p style="text-align:center;">Hello campers! I am Sarah, and I am in charge of summer camp lodging here at Wayne. As I'm sure you know, the school
 					has several dorms for students to live in throughout the year, and this is the same for the summer campers. I coordinate 
 					with Residence Life to get you in a room with a roommate that is in the same camp, such as music or sports. This is to 
@@ -116,29 +157,29 @@
 					so that one person does not disturb the other with a late or early practice or something of that nature. I also make sure
 					that maintenance cleans your room, as well as making sure that all necessary furniture, a desk, a wardrobe, and a bed are in 
 					the room when you arrive.  </p>				
-					<center><h4><u>Contact Me</u></h4></center>				
+					<center><h4><u><br>Contact Me</u></h4></center>				
 				<p style="text-align:center;"><b>Phone Number</b><br>(444)444-4444</p>
 				<p style="text-align:center;"><b>Email</b><br>sadoh01@wsc.edu</p>
 			</div>
 
 			<div class="row">
-				<h3 style="text-align:center;">James Doughe</h3>
+				<h3 style="text-align:center;">James Doughe</h3><br>
 					<center><img src = "https://t4.ftcdn.net/jpg/05/14/72/33/240_F_514723373_cIDcULXKOjW0yld18ENeWtFe5maDrQ4k.jpg"
-						alt = "James Dooughe Profile picture"></center>
-					<center><h4>What I do</h4></center>
+						alt = "James Dooughe Profile picture"></center><br>
+					<center><h3><u>WHAT I DO</u></h3></center><br>
 					<p style="text-align:center;">Good day to all future campers and parents! My name is James, and I am in charge of the meal preparation for summer campers 
 						here at Wayne. What I do is interact with the cooks and meal preppers here at Wayne to make sure you are well and fed throughout
 						your time here. This includes breakfast, lunch, and dinner, as well as snacks for after practice or activities. I also make sure
 						that any and all special occomodations and requests for special diets. I also coordinate with meal makers to provide snacks and drinks
 						for those who need it during an acivity or practice, like water or gatorade for sports, as drinks for other camps as well, like 
 						marching band. This is all to make sure you are comfortable and remain healthy throughout your time at one of our camps.</p>					
-					<center><h4><u>Contact Me</u></h4></center>
+					<center><h4><u><br>Contact Me</u></h4></center>
 					<p style="text-align:center;"><b>Phone Number</b><br>(555)555-5555</p>
 					<p style="text-align:center;"><b>Email</b><br>jadoug11@wsc.edu</p>
 			</div>
 		  </div>
 			
-		  <center><h2><u>School Resources</u></h2></center>
+		  <center><h2><u>School Resources</u></h2></center><br>
 		  <div class = "row_layout">
 				<div class = "row">
 					<center><h3>Security</h3></center>
@@ -168,8 +209,8 @@
 		  </div>
 
 		<div>	
-			<h2 style="text-align:center;">Map</h2>
-			<p style="text-align:center;">A map of Wayne State Campus. </p>
+			<h2 style="text-align:center;"><br>Map</h2><br>
+			<p style="text-align:center;">A map of Wayne State Campus. </p><br>
 
 			<p style="text-align:center;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11815.
 			552445813248!2d-97.02354443181818!3d42.23820330710267!2m3!1f0!2f0!3f0!3m2!
@@ -180,6 +221,81 @@
 		</div>
 	</body>
 	<footer>
-		<h3><center>footer</center></h3>
+		<div class="foot-main-div">
+			<div class="name-address">
+				<p class="school-name">Wayne State College</p>
+				<p class="address">
+					1111 Main Street, <br />
+					Wayne, NE 68787
+				</p>
+				<div class="social-links">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="30"
+						width="25"
+						viewBox="0 0 448 512"
+					>
+						<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+						<path
+							fill="#cad1dd"
+							d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"
+						/>
+					</svg>
+
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="30"
+						width="25"
+						viewBox="0 0 448 512"
+					>
+						<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+						<path
+							fill="#cad1dd"
+							d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"
+						/>
+					</svg>
+
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="30"
+						width="25"
+						viewBox="0 0 448 512"
+					>
+						<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+						<path
+							fill="#cad1dd"
+							d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"
+						/>
+					</svg>
+
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						height="30"
+						width="25"
+						viewBox="0 0 448 512"
+					>
+						<!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+						<path
+							fill="#cad1dd"
+							d="M282 256.2l-95.2-54.1V310.3L282 256.2zM384 32H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm14.4 136.1c7.6 28.6 7.6 88.2 7.6 88.2s0 59.6-7.6 88.1c-4.2 15.8-16.5 27.7-32.2 31.9C337.9 384 224 384 224 384s-113.9 0-142.2-7.6c-15.7-4.2-28-16.1-32.2-31.9C42 315.9 42 256.3 42 256.3s0-59.7 7.6-88.2c4.2-15.8 16.5-28.2 32.2-32.4C110.1 128 224 128 224 128s113.9 0 142.2 7.7c15.7 4.2 28 16.6 32.2 32.4z"
+						/>
+					</svg>
+				</div>
+			</div>
+			<div class="important-camp-info">
+				<a href="./calendar.html" target="_blank">Calender</a>
+				<a href="./directory.html" target="_blank">Directory</a>
+				<a
+					href="https://www.wsc.edu/info/20011/about/1239/privacy_policy"
+					target="_blank"
+					>Privacy Policy</a
+				>
+				<a
+					href="https://www.wsc.edu/info/20029/safety_and_security/752/building_and_person_emergencies"
+					target="_blank"
+					>Emergency</a
+				>
+			</div>
+		</div>
 	</footer>
 </html>
